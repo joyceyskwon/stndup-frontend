@@ -1,7 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import './Searchbar.css'
 
-export const Searchbar = () => {
+export const Searchbar = ({ value, onChange }) => {
   return(
-    <div></div>
+    <div className="search-bar">
+      {/* <i class="fas fa-search"></i> */}
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+      />
+    </div>
   )
 }
