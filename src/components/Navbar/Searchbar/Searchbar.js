@@ -4,7 +4,7 @@ import './Searchbar.css'
 export const Searchbar = ({ value, onChange }) => {
   return(
     <div className="search-bar">
-      {/* <i class="fas fa-search"></i> */}
+      {/* <i className="fas fa-search"></i> */}
       <input
         type="text"
         value={value}
