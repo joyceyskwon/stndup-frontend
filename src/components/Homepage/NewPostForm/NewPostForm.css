@@ -1,0 +1,35 @@
+input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  padding: 8px;
+  justify-self: start;
+  border-radius: 15px;
+  width: 300px;
+  outline: none;
+  align-items: center;
+}
+
+.new-post-form {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* .fa-user {
+  color: #fff;
+  background-color: #6568F4;
+  padding: 1rem;
+  border-radius: 100px;
+} */
+
+img {
+  width: 60px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 100px;
+}

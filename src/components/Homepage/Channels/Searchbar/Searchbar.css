@@ -5,17 +5,18 @@ input {
   -moz-appearance: none;
   appearance: none;
   background: #f2f2f2;
-  padding: 8px;
   justify-self: start;
-  margin-left: 60px;
   border-radius: 15px;
   width: 300px;
   outline: none;
-  align-items: center;
+  /* padding: 8px; */
+  /* margin-left: 60px; */
+  /* align-items: center; */
 }
 
 .search-bar {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
+  /* margin-left: 60px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* margin-left: 10px; */
 }

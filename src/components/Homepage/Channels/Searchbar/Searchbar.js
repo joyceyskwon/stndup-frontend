@@ -9,6 +9,7 @@ export const Searchbar = ({ value, onChange }) => {
         type="text"
         value={value}
         onChange={onChange}
+        placeholder='# What is on your mind?'
       />
     </div>
   )

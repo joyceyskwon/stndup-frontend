@@ -1,0 +1,14 @@
+.reaction-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 4rem);
+  grid-gap: none;
+  list-style: none;
+}
+
+#reaction-icon {
+  justify-content: left;
+  text-decoration: none;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}

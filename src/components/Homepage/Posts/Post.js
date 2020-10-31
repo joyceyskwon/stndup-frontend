@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactionContanier from './ReactionContainer'
 import './Post.css'
 
 export const Post = props => {
@@ -11,34 +12,35 @@ export const Post = props => {
       <p>Created: {post.creationDateTime}</p>
       <p>Yesterday:</p>
       <ul>
-        {post.yesterday.map((y, index) => {
+        {post.yesterday.map((yesterday, index) => {
           return(
             <li key={index}>
-             {y} 
+             {yesterday} 
             </li>
           )
         })}
       </ul>
       <p>Today:</p>
       <ul>
-        {post.today.map((y, index) => {
+        {post.today.map((today, index) => {
           return (
             <li key={index}>
-              {y}
+              {today}
             </li>
           )
         })}
       </ul>
       <p>What is stopping you?</p>
       <ul>
-        {post.obstacle.map((y, index) => {
+        {post.obstacle.map((obstacle, index) => {
           return (
             <li key={index}>
-              {y}
+              {obstacle}
             </li>
           )
         })}
       </ul>
+      <ReactionContanier />
     </div>
   )
 }

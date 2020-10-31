@@ -1,3 +1,6 @@
 .homepage {
   padding: 20px;
+  background-color: rgb(241, 241, 241);
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }
