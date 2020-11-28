@@ -1,5 +1,5 @@
-input {
-  border: none;
+.search-bar-container {
+  /* border: none;
   -webkit-appearance: none;
   -ms-appearance: none;
   -moz-appearance: none;
@@ -8,15 +8,19 @@ input {
   justify-self: start;
   border-radius: 15px;
   width: 300px;
-  outline: none;
-  /* padding: 8px; */
-  /* margin-left: 60px; */
-  /* align-items: center; */
+  outline: none; */
 }
 
 .search-bar {
-  /* margin-left: 60px; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* margin-left: 10px; */
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  justify-self: start;
+  border-radius: 15px;
+  width: 300px;
+  outline: none;
+  padding: 10px;
 }

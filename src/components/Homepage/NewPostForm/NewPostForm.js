@@ -5,7 +5,7 @@ class NewPostForm extends Component {
   render() {
     const { currentUser,value, onChange } = this.props
     return(
-      <div className="new-post-form">
+      <div className="new-post-container">
         <img
           className="current-user-image"
           src={currentUser}
@@ -13,6 +13,7 @@ class NewPostForm extends Component {
         />
         {/* <i className='icon large circular blue shield'></i> */}
         <input
+          className="new-post-form"
           type="text"
           value={value}
           onChange={onChange}

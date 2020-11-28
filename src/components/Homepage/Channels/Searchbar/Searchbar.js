@@ -3,13 +3,14 @@ import './Searchbar.css'
 
 export const Searchbar = ({ value, onChange }) => {
   return(
-    <div className="search-bar">
+    <div className="search-bar-container">
       {/* <i className="fas fa-search"></i> */}
       <input
+        className="search-bar"
         type="text"
         value={value}
         onChange={onChange}
-        placeholder='# What is on your mind?'
+        placeholder='What is on your mind?'
       />
     </div>
   )
