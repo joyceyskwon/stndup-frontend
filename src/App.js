@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar'
 import Homepage from './components/Homepage/Homepage'
+import SignupPage from './components/SignupPage/SignupPage'
 import './App.css';
 
 class App extends React.Component {
@@ -9,15 +10,18 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchBots()
+    this.fetchCurrentUser()
   }
 
-  fetchBots = () => {
-    fetch('https://bot-battler-api.herokuapp.com/api/v1/bots')
+
+
+  fetchCurrentUser = () => {
+    fetch('http://localhost:3000/')
       .then(r => r.json())
-      .then(bots => {
+      .then(users => {
+        console.log(users, '<= This is the current user')
         this.setState({
-          currentUser: bots[3].avatar_url
+          currentUser: users[0]
         })
       })
   }
@@ -26,9 +30,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar />
-        <Homepage 
-          currentUser={this.state.currentUser}
-        />
+        { this.state.currentUser ?
+          <Homepage 
+            currentUser={this.state.currentUser}
+          />
+         :
+          <SignupPage />
+        }
       </div>
     );
   }
