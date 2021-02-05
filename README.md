@@ -1,5 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## File Structure
+
+In the project directory,
+
+### 'src'
+contains index.js, which contains App.js, and all the components
+
+### 'index.js'
+contains App.js and handles dispatch actions from redux (yet to be implemented)
+
+### 'App.js'
+is the root file of all the components inside components folder
+
+### 'components'
+consists all the components in each nested folder
+
 ## Available Scripts
 
 In the project directory, you can run:
