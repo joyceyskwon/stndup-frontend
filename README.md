@@ -5,10 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory,
 
 ### 'src'
-contains index.js, which contains App.js, and all the components
+contains index.js, App.js, and components folder
 
 ### 'index.js'
-contains App.js and handles dispatch actions from redux (yet to be implemented)
+contains App.js and handles dispatch actions from redux (🚩yet to be implemented🔜)
 
 ### 'App.js'
 is the root file of all the components inside components folder
