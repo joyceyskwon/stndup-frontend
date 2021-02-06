@@ -30,13 +30,16 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar />
-        { this.state.currentUser ?
+        <Homepage
+          currentUser={this.state.currentUser}
+        />
+        {/* { this.state.currentUser ?
           <Homepage 
             currentUser={this.state.currentUser}
           />
          :
           <SignupPage />
-        }
+        } */}
       </div>
     );
   }
