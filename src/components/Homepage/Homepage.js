@@ -11,11 +11,11 @@ class Homepage extends Component {
     const { currentUser } = this.props
     return(
       <div className="homepage">
-        <ChannelsContainer />
+        {/* <ChannelsContainer /> */}
         <div className="posts-container">
-          <NewPostForm 
+          {/* <NewPostForm 
             currentUser={currentUser}
-          />
+          /> */}
           {PostsData.map((post, index) => {
             return(
               <Post 
