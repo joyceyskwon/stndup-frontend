@@ -1,5 +1,5 @@
 :root {
-  --primary: rgb(255, 211, 100);
+  --primary: #EA532D;
 }
 
 .btn {
@@ -8,14 +8,14 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background: rgb(255, 211, 100);
+  background: #EA532D;
 }
 
 .btn:hover{
   padding: 8px 20px;
   transition: all 0.3s ease-out;
   background: #fff;
-  color: rgb(255, 211, 100);
+  color: #EA532D;
   transition: 250ms;
 }
 

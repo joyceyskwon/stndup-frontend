@@ -6,7 +6,7 @@ export const Post = props => {
   const { post } = props
   return(
     <div
-      className="post"
+      className="post grid-item"
     >
       <h3>{post.author}</h3>
       <p>Created: {post.creationDateTime}</p>
