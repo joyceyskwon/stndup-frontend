@@ -1,7 +1,15 @@
+li {
+  list-style: none;
+}
+
+input {
+  margin: .4rem;
+}
+
 .post {
   font-size: 1rem;
   padding: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: #B2CECD;
   border-radius: 10px;
   font-family: 'Helvetica Neue';
   line-height: 1.6rem;
