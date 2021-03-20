@@ -13,10 +13,8 @@ class App extends React.Component {
     this.fetchCurrentUser()
   }
 
-
-
   fetchCurrentUser = () => {
-    fetch('http://localhost:3000/')
+    fetch('http://localhost:3000/api/v1/users')
       .then(r => r.json())
       .then(users => {
         console.log(users, '<= This is the current user')

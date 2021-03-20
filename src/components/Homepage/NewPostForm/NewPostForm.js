@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import { Form } from 'semantic-ui-react'
 import './NewPostForm.css'
 
 class NewPostForm extends Component {
   render() {
-    const { currentUser,value, onChange } = this.props
+    const { currentUser, value, handleChange, handleSubmit } = this.props
     return(
       <div className="new-post-container">
         <img
@@ -12,13 +13,20 @@ class NewPostForm extends Component {
           alt="Current User!"
         />
         {/* <i className='icon large circular blue shield'></i> */}
-        <input
-          className="new-post-form"
-          type="text"
-          value={value}
-          onChange={onChange}
-          placeholder='What do you need to do today?'
-        />
+        <Form onSubmit={handleSubmit}>
+          <Form.Group>
+            <Form.Input
+              value={value}
+              onChange={handleChange}
+              placeholder='What do you need to do today?'
+            />
+            <Form.Button
+              type='submit'
+            >
+              Submit
+            </Form.Button>
+          </Form.Group>
+        </Form>
       </div>
     )
   }
