@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar'
 import Homepage from './components/Homepage/Homepage'
+import { connect } from 'react-redux'
+import { BrowserRouter as withRouter } from 'react-router-dom'
 import SignupPage from './components/SignupPage/SignupPage'
 import './App.css';
 
@@ -43,4 +45,10 @@ class App extends React.Component {
   }
 }
 
-export default App;
+const mapStateToProps = ({ auth }) => {
+  return {
+    currentUser: this.state.currentUser
+  }
+}
+
+export default withRouter(connect(mapStateToProps, {})(App));
